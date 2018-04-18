@@ -9,15 +9,37 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
+
+
+    <button ion-item>
+      <ion-icon name="cart" item-start></ion-icon>
+      Sapato
+    </button>
+
+    <button ion-item>
+      <ion-icon name="shirt" item-start></ion-icon>
+      Roupa
+    </button>
+
+    <button ion-item>
+      <ion-icon name="shirt" item-start></ion-icon>
+      Roupas de crinça
+    </button>
+
+    <button ion-item>
+      <ion-icon name="restaurant" item-start></ion-icon>
+      Comida
+    </button>
+
+    <button ion-item>
+      <ion-icon name="beer" item-start></ion-icon>
+      Bar
+    </button>
+
+    <button ion-item>
+      <ion-icon name="planet" item-start></ion-icon>
+      Outros
     </button>
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+
 </ion-content>
